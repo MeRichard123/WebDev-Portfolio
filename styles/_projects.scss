@@ -1,0 +1,35 @@
+.projects {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  @include flex(space-between, center, row);
+  text-align: center;
+  flex-wrap: wrap;
+  h2 {
+    margin: 5rem;
+    padding: 2rem 5rem;
+  }
+}
+.travelly,
+.elena-joy,
+.Equifox,
+.dashboard,
+.Tort,
+.terminal {
+  flex: 1 1 40rem;
+  @include flex(center, center, column);
+  .btn-group {
+    display: flex;
+    a {
+      padding: 1rem 1rem;
+      border: 2px solid black;
+      margin: 2rem;
+    }
+  }
+}
+.projects-title {
+  font-size: 6rem;
+  margin-top: 6rem;
+  text-decoration: underline;
+  @include flex(center, center, row);
+}

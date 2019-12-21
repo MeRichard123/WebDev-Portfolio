@@ -1,0 +1,120 @@
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(to left, #38d39f, #38a4d3);
+$background-color: #154354;
+$grey-text: #2c2c2c;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+.image {
+  // 604 * 486
+  width: 604px;
+  height: 486px;
+  border-radius: 5%;
+}
+.disabled {
+  pointer-events: none;
+}
+
+@import "global";
+@import "intro";
+@import "projects";
+@import "contact";
+@import "footer";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 1332px) {
+  html {
+    font-size: 40%;
+  }
+  .splash {
+    height: 70%;
+  }
+  svg {
+    width: 80%;
+  }
+  nav {
+    width: 100%;
+  }
+  .icons {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 30%;
+  }
+  svg {
+    height: 50%;
+  }
+  .main-head {
+    width: 100%;
+    margin: 2rem;
+  }
+  nav {
+    .logo {
+      @include flex(center, center, column);
+      flex: 1 1 40rem;
+      margin-top: 2rem;
+    }
+    ul {
+      flex: 1 1 60rem;
+      margin: 2rem 0rem;
+    }
+  }
+  .intro-text {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .intro-images {
+    text-align: center;
+    flex: 1 1 80rem;
+    transform: translateX(-15%);
+  }
+  .intro-social {
+    @include flex(center, center, row);
+    a {
+      margin: 2rem;
+    }
+  }
+  .travelly,
+  .elena-joy,
+  .Equifox,
+  .dashboard,
+  .Tort,
+  .terminal {
+    flex: 1 1 50rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  form {
+    padding: 0;
+    width: 100%;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .skills h1 {
+    margin: 0;
+    padding: 0;
+  }
+  .content {
+    .hacker {
+      height: 30vh;
+    }
+  }
+}
