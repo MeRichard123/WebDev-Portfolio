@@ -447,6 +447,17 @@ nav ul {
           flex-direction: row;
 }
 
+.contact-title {
+  font-size: 7rem;
+  padding: 2.5rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .form-section {
   min-height: 80vh;
   display: -webkit-box;
@@ -463,6 +474,7 @@ nav ul {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .form-section form {
@@ -594,7 +606,8 @@ body {
     font-size: 30%;
   }
   svg {
-    height: 50%;
+    height: 10%;
+    background-image: url("../img/splash.svg");
   }
   .main-head {
     width: 100%;
@@ -688,8 +701,15 @@ body {
     margin: 0;
     padding: 0;
   }
+  .splash {
+    height: 40vh;
+    display: none;
+  }
   .content .hacker {
     height: 30vh;
+  }
+  .content .icons {
+    margin-bottom: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
