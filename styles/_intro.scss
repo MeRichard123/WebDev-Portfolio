@@ -110,6 +110,9 @@ nav {
     grid-gap: 4rem;
     img {
       object-fit: cover;
+      align-items: center;
+      justify-self: center;
+      align-self: center;
       filter: grayscale(1);
       transition: all 0.5s ease-out;
       &:hover {
