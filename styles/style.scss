@@ -13,7 +13,11 @@ $grey-text: #2c2c2c;
   align-items: $align;
   flex-direction: $direction;
 }
-
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
 .image {
   // 604 * 486
   width: 604px;
@@ -35,7 +39,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100%;
 }
 
 @media screen and (max-width: 1332px) {
@@ -60,6 +63,7 @@ body {
   html {
     font-size: 30%;
   }
+
   .intro {
     align-items: center;
   }
