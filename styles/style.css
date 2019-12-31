@@ -647,6 +647,16 @@ body {
   border-radius: 50%;
 }
 
+p::-moz-selection {
+  color: black;
+  background-color: #38d2a0;
+}
+
+p::selection {
+  color: black;
+  background-color: #38d2a0;
+}
+
 @media screen and (max-width: 754px) {
   html {
     font-size: 30%;
