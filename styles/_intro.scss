@@ -73,7 +73,7 @@ nav {
 
 .intro-text,
 .intro-images {
-  flex: 1 1 40rem;
+  flex: 1 1 50rem;
 }
 .skills {
   width: 90%;
@@ -97,12 +97,25 @@ nav {
 }
 .content {
   @include flex(space-around, center, row);
+  flex-wrap: wrap;
+  flex: 1 1 80rem;
   .hacker {
-    height: 50vh;
+    height: calc(1vw + 50vh);
     margin: 2rem 5rem;
   }
   .icons {
-    @include flex(space-between, left, column);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 4rem;
+    img {
+      object-fit: cover;
+      filter: grayscale(1);
+      transition: all 0.5s ease-out;
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
   }
 }
 // #plant-left {
@@ -144,5 +157,11 @@ nav {
   }
   to {
     transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .content {
+    flex-direction: column;
   }
 }

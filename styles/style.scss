@@ -39,7 +39,7 @@ body {
     font-size: 40%;
   }
   .splash {
-    height: 70%;
+    height: 80%;
   }
   svg {
     width: 80%;
@@ -56,9 +56,14 @@ body {
   html {
     font-size: 30%;
   }
+  .intro {
+    align-items: center;
+  }
+  .intro-text p {
+    font-size: 4rem;
+  }
   svg {
-    height: 10%;
-    background-image: url("../img/splash.svg");
+    display: none;
   }
   .main-head {
     width: 100%;
@@ -119,7 +124,7 @@ body {
   }
   .content {
     .hacker {
-      height: 30vh;
+      height: 20vh;
     }
     .icons {
       margin-bottom: 5rem;
