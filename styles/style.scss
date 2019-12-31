@@ -13,11 +13,13 @@ $grey-text: #2c2c2c;
   align-items: $align;
   flex-direction: $direction;
 }
+// stop stange side scroll
 html,
 body {
   width: auto !important;
   overflow-x: hidden !important;
 }
+
 .image {
   // 604 * 486
   width: 604px;
