@@ -775,4 +775,14 @@ p::selection {
     margin-bottom: 5rem;
   }
 }
+
+@media screen and (min-width: 2992px) {
+  html {
+    font-size: 92.5%;
+  }
+  .icons {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -149,3 +149,12 @@ p::selection {
     }
   }
 }
+
+@media screen and (min-width: 2992px) {
+  html {
+    font-size: 92.5%;
+  }
+  .icons {
+    transform: scale(2);
+  }
+}
