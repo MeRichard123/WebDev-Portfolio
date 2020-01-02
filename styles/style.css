@@ -483,6 +483,18 @@ nav ul {
           flex-direction: row;
 }
 
+.projects p {
+  width: 80%;
+}
+
+.Tort p {
+  width: 40%;
+}
+
+kbd {
+  font-size: 3.5rem;
+}
+
 .contact-title {
   font-size: 7rem;
   padding: 2.5rem 0rem;

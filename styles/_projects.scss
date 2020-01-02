@@ -33,3 +33,14 @@
   text-decoration: underline;
   @include flex(center, center, row);
 }
+
+.projects p {
+  width: 80%;
+}
+.Tort p {
+  width: 40%;
+}
+
+kbd {
+  font-size: 3.5rem;
+}
