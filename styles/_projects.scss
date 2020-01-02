@@ -44,3 +44,9 @@
 kbd {
   font-size: 3.5rem;
 }
+
+@media screen and (max-width: 754px) {
+  .projects p {
+    width: 100%;
+  }
+}
