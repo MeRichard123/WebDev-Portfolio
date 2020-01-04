@@ -68,6 +68,15 @@ a {
   color: #2c2c2c;
 }
 
+.TakeTop {
+  position: absolute;
+  border: solid black 2px !important;
+  border-radius: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
 .main-head {
   width: 95%;
   margin: 0 0 0 auto;
@@ -277,6 +286,10 @@ nav ul {
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   grid-gap: 4rem;
+}
+
+.content .icons h1 {
+  z-index: 9999;
 }
 
 .content .icons img {

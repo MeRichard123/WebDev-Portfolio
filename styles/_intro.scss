@@ -108,6 +108,9 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 4rem;
+    h1 {
+      z-index: 9999;
+    }
     img {
       object-fit: cover;
       align-items: center;

@@ -48,3 +48,10 @@ a {
   // color: #3aadcd;
   color: $grey-text;
 }
+.TakeTop {
+  position: absolute;
+  border: solid black 2px !important;
+  border-radius: 50%;
+  right: 10px;
+  transform: translateY(-40px);
+}
