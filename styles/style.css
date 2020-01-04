@@ -209,7 +209,7 @@ nav ul {
 .active {
   background: #2c2c2c;
   color: white;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border-radius: 2rem;
 }
 
@@ -251,6 +251,67 @@ nav ul {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.about-title {
+  font-size: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about {
+  background: rgba(57, 170, 206, 0.2);
+  z-index: -5;
+  padding: 3rem 3rem;
+}
+
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about img {
+  border-radius: 50%;
+}
+
+.about .profile {
+  background: #515151;
+  width: 287px;
+  height: 287px;
+  color: white;
+  border-radius: 50%;
+}
+
+.about .profile p {
+  font-size: 5rem;
+  position: relative;
+  left: 55%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about p {
+  width: 50%;
+  font-size: 2.8rem;
+  line-height: 6rem;
 }
 
 .content {
@@ -401,6 +462,18 @@ nav ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about p {
+    width: 80%;
   }
 }
 
