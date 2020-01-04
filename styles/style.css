@@ -285,6 +285,9 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
 }
 
 .about img {
@@ -466,14 +469,19 @@ nav ul {
 }
 
 @media screen and (max-width: 754px) {
-  .about {
+  .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about p {
+  .wrapper p {
     width: 80%;
+  }
+  .wrapper .profile p {
+    left: 20%;
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
   }
 }
 

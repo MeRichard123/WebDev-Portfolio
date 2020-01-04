@@ -107,6 +107,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex: 1 1 50rem;
   }
   padding: 3rem 3rem;
   img {
@@ -209,10 +210,14 @@ nav {
   }
 }
 @media screen and (max-width: 754px) {
-  .about {
+  .wrapper {
     flex-direction: column;
     p {
       width: 80%;
+    }
+    .profile p {
+      left: 20%;
+      transform: translateX(25%);
     }
   }
 }
