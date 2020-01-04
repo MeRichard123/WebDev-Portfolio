@@ -483,6 +483,10 @@ nav ul {
     -webkit-transform: translateX(25%);
             transform: translateX(25%);
   }
+  .wrapper .profile {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
 }
 
 .projects {
