@@ -38,6 +38,7 @@ nav {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+    animation: Text 1s 1 0s linear;
   }
   h3 {
     font-size: 6rem;
@@ -201,6 +202,17 @@ nav {
   }
   to {
     transform: rotateZ(360deg);
+  }
+}
+@keyframes Text {
+  0% {
+    transform: translateX(-150%);
+  }
+  51% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
