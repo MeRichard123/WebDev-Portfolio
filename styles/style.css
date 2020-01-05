@@ -273,7 +273,8 @@ nav ul {
 }
 
 .about {
-  background: rgba(57, 170, 206, 0.2);
+  background: rgba(57, 170, 206, 0.5);
+  position: relative;
   z-index: -5;
   padding: 3rem 3rem;
 }
@@ -302,6 +303,8 @@ nav ul {
   height: 287px;
   color: white;
   border-radius: 50%;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
 
 .about .profile p {
@@ -317,6 +320,30 @@ nav ul {
   width: 50%;
   font-size: 2.8rem;
   line-height: 6rem;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 6rem 0;
+  border-color: transparent #fff transparent transparent;
+  top: 0;
+  right: 0;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6rem 0 0 100vw;
+  border-color: transparent transparent transparent #fff;
+  bottom: 0;
+  right: 0;
 }
 
 .content {
