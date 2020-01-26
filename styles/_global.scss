@@ -43,6 +43,12 @@ a {
   text-decoration: none;
   color: $grey-text;
 }
+.nav-link:not(.active):hover {
+  // padding: 1rem 1rem;
+  // border: #515151 2px solid;
+  // border-radius: 15%;
+  text-decoration: underline;
+}
 .skill {
   font-size: 8rem;
   // color: #3aadcd;
@@ -54,4 +60,19 @@ a {
   border-radius: 50%;
   right: 10px;
   transform: translateY(-40px);
+}
+#sololearn {
+  width: 3rem;
+  filter: grayscale(100%) brightness(200%);
+  &:hover {
+    transform-origin: center;
+    transform: rotate(360deg);
+  }
+}
+.social {
+  transition: transform 600ms ease-in-out;
+}
+.social:hover {
+  transform-origin: center;
+  transform: rotate(360deg);
 }
