@@ -27,6 +27,16 @@ html {
   scroll-behavior: smooth;
 }
 
+*::-moz-selection {
+  color: black;
+  background-color: #38d2a0;
+}
+
+*::selection {
+  color: black;
+  background-color: #38d2a0;
+}
+
 /* Global Styles */
 h1 {
   font-size: 2.5rem;
@@ -916,16 +926,6 @@ body {
   border: 1px solid #fff;
   padding: 1rem 1rem;
   border-radius: 50%;
-}
-
-p::-moz-selection {
-  color: black;
-  background-color: #38d2a0;
-}
-
-p::selection {
-  color: black;
-  background-color: #38d2a0;
 }
 
 @media screen and (max-width: 754px) {
