@@ -10,7 +10,10 @@ html {
   font-size: 42.5%;
   scroll-behavior: smooth;
 }
-
+*::selection {
+  color: black;
+  background-color: #38d2a0;
+}
 /* Global Styles */
 h1 {
   font-size: $header1;
