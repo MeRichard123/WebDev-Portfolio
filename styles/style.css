@@ -619,7 +619,7 @@ nav ul {
     width: 90%;
   }
   .icons img {
-    height: 80%;
+    height: 10vh;
   }
   .wrapper {
     -webkit-box-orient: vertical;
