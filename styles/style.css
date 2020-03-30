@@ -619,7 +619,7 @@ nav ul {
     width: 90%;
   }
   .icons img {
-    height: 50%;
+    /*height: 50%;*/
   }
   .wrapper {
     -webkit-box-orient: vertical;
@@ -1010,12 +1010,6 @@ body {
   form {
     padding: 0;
     width: 100%;
-  }
-  .icons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .skills h1 {
     margin: 0;
