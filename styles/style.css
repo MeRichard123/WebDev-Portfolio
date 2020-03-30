@@ -29,12 +29,12 @@ html {
 
 *::-moz-selection {
   color: black;
-  background-color: #38d2a0;
+  background-color: rgba(56, 210, 160, 0.5);
 }
 
 *::selection {
   color: black;
-  background-color: #38d2a0;
+  background-color: rgba(56, 210, 160, 0.5);
 }
 
 /* Global Styles */
@@ -392,46 +392,29 @@ nav ul {
   right: 0;
 }
 
-.content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 80rem;
-          flex: 1 1 80rem;
-}
-
-.content .hacker {
-  height: calc(1vw + 50vh);
-  margin: 2rem 5rem;
-}
-
-.content .icons {
+.icons {
+  width: 80%;
+  margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  grid-gap: 4rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+  -ms-grid-rows: (1fr)[auto-fit];
+      grid-template-rows: repeat(auto-fit, 1fr);
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2.5rem;
+  margin-bottom: 5.5rem;
+  padding: 2.5rem;
+  border: 8px solid #39aace;
 }
 
-.content .icons h1 {
+.icons h1 {
   z-index: 9999;
 }
 
-.content .icons img {
+.icons img {
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-box-align: center;
@@ -448,7 +431,7 @@ nav ul {
   transition: all 0.5s ease-out;
 }
 
-.content .icons img:hover {
+.icons img:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
@@ -623,15 +606,6 @@ nav ul {
   }
 }
 
-@media screen and (max-width: 1420px) {
-  .content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 @media screen and (max-width: 754px) {
   .wrapper {
     -webkit-box-orient: vertical;
@@ -686,7 +660,8 @@ nav ul {
 .Equifox,
 .dashboard,
 .Tort,
-.terminal {
+.terminal,
+.tedimin {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
@@ -710,7 +685,8 @@ nav ul {
 .Equifox .btn-group,
 .dashboard .btn-group,
 .Tort .btn-group,
-.terminal .btn-group {
+.terminal .btn-group,
+.tedimin .btn-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,7 +697,8 @@ nav ul {
 .Equifox .btn-group a,
 .dashboard .btn-group a,
 .Tort .btn-group a,
-.terminal .btn-group a {
+.terminal .btn-group a,
+.tedimin .btn-group a {
   padding: 1rem 1rem;
   border: 2px solid black;
   margin: 2rem;
@@ -748,10 +725,6 @@ nav ul {
 
 .projects p {
   width: 80%;
-}
-
-.Tort p {
-  width: 40%;
 }
 
 kbd {
@@ -917,9 +890,6 @@ body {
   nav {
     width: 100%;
   }
-  .icons {
-    font-size: 4rem;
-  }
 }
 
 .fa-arrow-up {
@@ -1007,7 +977,8 @@ body {
   .Equifox,
   .dashboard,
   .Tort,
-  .terminal {
+  .terminal,
+  .tedimin {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50rem;
             flex: 1 1 50rem;
@@ -1017,7 +988,8 @@ body {
   .Equifox img,
   .dashboard img,
   .Tort img,
-  .terminal img {
+  .terminal img,
+  .tedimin img {
     width: 100%;
     height: 100%;
   }
@@ -1025,7 +997,7 @@ body {
     padding: 0;
     width: 100%;
   }
-  .content {
+  .icons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1039,11 +1011,9 @@ body {
     height: 40vh;
     display: none;
   }
-  .content .hacker {
-    height: 20vh;
-  }
-  .content .icons {
+  .icons {
     margin-bottom: 5rem;
+    margin-top: 2.5rem;
   }
 }
 

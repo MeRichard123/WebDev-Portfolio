@@ -56,9 +56,6 @@ body {
   nav {
     width: 100%;
   }
-  .icons {
-    font-size: 4rem;
-  }
 }
 .fa-arrow-up {
   border: 1px solid #fff;
@@ -118,7 +115,8 @@ body {
   .Equifox,
   .dashboard,
   .Tort,
-  .terminal {
+  .terminal,
+  .tedimin {
     flex: 1 1 50rem;
     img {
       width: 100%;
@@ -129,7 +127,7 @@ body {
     padding: 0;
     width: 100%;
   }
-  .content {
+  .icons {
     flex-direction: column;
   }
   .skills h1 {
@@ -140,13 +138,9 @@ body {
     height: 40vh;
     display: none;
   }
-  .content {
-    .hacker {
-      height: 20vh;
-    }
-    .icons {
-      margin-bottom: 5rem;
-    }
+  .icons {
+    margin-bottom: 5rem;
+    margin-top: 2.5rem;
   }
 }
 

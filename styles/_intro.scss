@@ -162,35 +162,39 @@ nav {
   right: 0;
 }
 // slanted impression pseudo elements end
-.content {
-  @include flex(space-around, center, row);
-  flex-wrap: wrap;
-  flex: 1 1 80rem;
-  .hacker {
-    height: calc(1vw + 50vh);
-    margin: 2rem 5rem;
+// .icons {
+//   @include flex(space-around, center, row);
+//   flex-wrap: wrap;
+//   flex: 1 1 80rem;
+// }
+.icons {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2.5rem;
+  margin-bottom: 5.5rem;
+  padding: 2.5rem;
+  border: 8px solid #39aace;
+  h1 {
+    z-index: 9999;
   }
-  .icons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 4rem;
-    h1 {
-      z-index: 9999;
-    }
-    img {
-      object-fit: cover;
-      align-items: center;
-      justify-self: center;
-      align-self: center;
-      filter: grayscale(1);
-      transition: all 0.5s ease-out;
-      &:hover {
-        filter: grayscale(0);
-      }
+  img {
+    object-fit: cover;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    filter: grayscale(1);
+    transition: all 0.5s ease-out;
+    &:hover {
+      filter: grayscale(0);
     }
   }
 }
+
 // #plant-left {
 //   animation: plant 1.5s ease infinite alternate;
 // }
@@ -270,11 +274,6 @@ nav {
   40%,
   60% {
     transform: translate3d(4px, 0, 0);
-  }
-}
-@media screen and (max-width: 1420px) {
-  .content {
-    flex-direction: column;
   }
 }
 @media screen and (max-width: 754px) {
