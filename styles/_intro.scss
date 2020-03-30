@@ -168,19 +168,25 @@ nav {
 //   flex: 1 1 80rem;
 // }
 .icons {
-  width: 80%;
+  width: 60%;
   margin: auto;
   display: grid;
   align-content: center;
   justify-items: center;
   grid-template-rows: repeat(auto-fit, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2.5rem;
   margin-bottom: 5.5rem;
   padding: 2.5rem;
   border: 8px solid #39aace;
   h1 {
     z-index: 9999;
+  }
+  #github {
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
   }
   img {
     object-fit: cover;
@@ -277,6 +283,12 @@ nav {
   }
 }
 @media screen and (max-width: 754px) {
+  .icons {
+    width: 90%;
+    img {
+      height: 50%;
+    }
+  }
   .wrapper {
     flex-direction: column;
     margin-bottom: 10rem;

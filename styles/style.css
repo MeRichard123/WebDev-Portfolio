@@ -393,7 +393,7 @@ nav ul {
 }
 
 .icons {
-  width: 80%;
+  width: 60%;
   margin: auto;
   display: -ms-grid;
   display: grid;
@@ -402,8 +402,8 @@ nav ul {
   justify-items: center;
   -ms-grid-rows: (1fr)[auto-fit];
       grid-template-rows: repeat(auto-fit, 1fr);
-  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2.5rem;
   margin-bottom: 5.5rem;
   padding: 2.5rem;
@@ -412,6 +412,14 @@ nav ul {
 
 .icons h1 {
   z-index: 9999;
+}
+
+.icons #github {
+  opacity: 0.5;
+}
+
+.icons #github:hover {
+  opacity: 1;
 }
 
 .icons img {
@@ -607,6 +615,12 @@ nav ul {
 }
 
 @media screen and (max-width: 754px) {
+  .icons {
+    width: 90%;
+  }
+  .icons img {
+    height: 50%;
+  }
   .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
