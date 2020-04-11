@@ -10,13 +10,14 @@
     padding: 2rem 5rem;
   }
 }
-.travelly,
+// .travelly,
 .elena-joy,
 .Equifox,
 .dashboard,
 .Tort,
 .terminal,
-.tedimin {
+.tedimin,
+.ArtJakub {
   flex: 1 1 40rem;
   @include flex(center, center, column);
   .btn-group {
