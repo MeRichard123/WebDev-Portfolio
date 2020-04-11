@@ -669,13 +669,7 @@ nav ul {
   padding: 2rem 5rem;
 }
 
-.travelly,
-.elena-joy,
-.Equifox,
-.dashboard,
-.Tort,
-.terminal,
-.tedimin {
+.proj {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
@@ -694,25 +688,13 @@ nav ul {
           flex-direction: column;
 }
 
-.travelly .btn-group,
-.elena-joy .btn-group,
-.Equifox .btn-group,
-.dashboard .btn-group,
-.Tort .btn-group,
-.terminal .btn-group,
-.tedimin .btn-group {
+.proj .btn-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.travelly .btn-group a,
-.elena-joy .btn-group a,
-.Equifox .btn-group a,
-.dashboard .btn-group a,
-.Tort .btn-group a,
-.terminal .btn-group a,
-.tedimin .btn-group a {
+.proj .btn-group a {
   padding: 1rem 1rem;
   border: 2px solid black;
   margin: 2rem;
@@ -986,24 +968,12 @@ body {
   .intro-social a {
     margin: 2rem;
   }
-  .travelly,
-  .elena-joy,
-  .Equifox,
-  .dashboard,
-  .Tort,
-  .terminal,
-  .tedimin {
+  .proj {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50rem;
             flex: 1 1 50rem;
   }
-  .travelly img,
-  .elena-joy img,
-  .Equifox img,
-  .dashboard img,
-  .Tort img,
-  .terminal img,
-  .tedimin img {
+  .proj img {
     width: 100%;
     height: 100%;
   }
