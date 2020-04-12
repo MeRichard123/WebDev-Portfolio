@@ -133,6 +133,11 @@ body {
     margin-bottom: 5rem;
     margin-top: 2.5rem;
   }
+  ::-webkit-scrollbar {
+  width: 5px;
+  height: 30px;
+  background: #eee;
+}
 }
 
 @media screen and (min-width: 2992px) {
