@@ -21,8 +21,7 @@ nav {
   }
 }
 .intro-images svg {
-  right: 0%;
-  height: 70vh;
+  height: 55vh;
 }
 .intro {
   min-height: 90vh;
@@ -45,6 +44,7 @@ nav {
     padding: 2rem 0rem;
   }
   p {
+    width: 85%;
     padding-top: 2rem;
     color: $grey-text;
   }
@@ -162,11 +162,6 @@ nav {
   right: 0;
 }
 // slanted impression pseudo elements end
-// .icons {
-//   @include flex(space-around, center, row);
-//   flex-wrap: wrap;
-//   flex: 1 1 80rem;
-// }
 .icons {
   width: 60%;
   margin: auto;
@@ -201,47 +196,21 @@ nav {
   }
 }
 
-// #plant-left {
-//   animation: plant 1.5s ease infinite alternate;
-// }
-// #plant-right {
-//   animation: plant 1.5s ease infinite alternate 0.5s;
-// }
-#me {
-  transform-origin: bottom;
-  animation: me 2s ease infinite alternate;
+#cursor {
+  transform-origin: center;
+  animation: cursorMove 2s ease infinite alternate;
 }
-#clock-arrow {
-  animation: clock 10s infinite linear;
-  transform-box: fill-box;
-  transform-origin: bottom;
-}
-
-@keyframes me {
+@keyframes cursorMove {
   from {
-    transform: rotateZ(-5deg);
+    transform: scale(1);
+    transform: translateX(0);
   }
   to {
-    transform: rotateZ(5deg);
+    transform: scale(0.1);
+    transform: translate(170px, -20px);
   }
 }
 
-@keyframes plant {
-  from {
-    transform: translateY(0%);
-  }
-  to {
-    transform: translateY(-30%);
-  }
-}
-@keyframes clock {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(360deg);
-  }
-}
 @keyframes Text {
   0% {
     transform: translateX(-150%);
