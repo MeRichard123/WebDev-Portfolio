@@ -547,6 +547,7 @@ nav ul {
 
 .blog__narrative {
   padding: 0.5rem;
+  width: 80%;
 }
 
 .blog::after {
