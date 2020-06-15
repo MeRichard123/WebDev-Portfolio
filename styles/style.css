@@ -573,6 +573,12 @@ nav ul {
   opacity: 1;
 }
 
+@media screen and (max-width: 900px) {
+  .blogs .blog {
+    width: 100%;
+  }
+}
+
 #cursor {
   -webkit-transform-origin: center;
           transform-origin: center;
