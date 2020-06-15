@@ -577,6 +577,9 @@ nav ul {
   .blogs .blog {
     width: 100%;
   }
+  .blogs .blog img {
+    height: 10vh;
+  }
 }
 
 #cursor {

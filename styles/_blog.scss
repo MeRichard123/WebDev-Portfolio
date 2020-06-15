@@ -72,6 +72,9 @@
   .blogs {
     .blog {
       width: 100%;
+      img {
+        height: 10vh;
+      }
     }
   }
 }
