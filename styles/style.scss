@@ -47,14 +47,14 @@ body {
   html {
     font-size: 40%;
   }
-  .splash {
-    height: 80%;
-  }
   svg {
     width: 80%;
   }
   nav {
     width: 100%;
+  }
+  .splash {
+    height: clamp(60vh, 1.5vw, 80rem);
   }
 }
 .fa-arrow-up {

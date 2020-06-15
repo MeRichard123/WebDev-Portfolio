@@ -42,6 +42,31 @@ h1 {
   font-size: 2.5rem;
 }
 
+.page-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3rem;
+  font-size: 8rem;
+  padding-top: 2rem;
+  color: #1c748f;
+}
+
+@supports (background-clip: text) {
+  .page-title {
+    background: -webkit-gradient(linear, right top, left top, from(#38d39f), to(#38a4d3));
+    background: linear-gradient(to left, #38d39f, #38a4d3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 li,
 button,
 label,
@@ -235,14 +260,20 @@ nav ul {
 .intro h2 {
   font-size: 8rem;
   padding-top: 2rem;
-  background: -webkit-gradient(linear, right top, left top, from(#38d39f), to(#38a4d3));
-  background: linear-gradient(to left, #38d39f, #38a4d3);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
+  color: #1c748f;
   -webkit-animation: Text 1s 1 0s linear;
           animation: Text 1s 1 0s linear;
+}
+
+@supports (background-clip: text) {
+  .intro h2 {
+    background: -webkit-gradient(linear, right top, left top, from(#38d39f), to(#38a4d3));
+    background: linear-gradient(to left, #38d39f, #38a4d3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
 }
 
 .intro h3 {
@@ -308,25 +339,6 @@ nav ul {
 
 .skills p {
   margin: 30px 0;
-}
-
-.skills h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 3rem;
-  font-size: 8rem;
-  padding-top: 2rem;
-  background: -webkit-gradient(linear, right top, left top, from(#38d39f), to(#38a4d3));
-  background: linear-gradient(to left, #38d39f, #38a4d3);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .about-title {
@@ -474,25 +486,6 @@ nav ul {
 
 .blogs {
   text-align: center;
-}
-
-.blogs h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 3rem;
-  font-size: 8rem;
-  padding-top: 2rem;
-  background: -webkit-gradient(linear, right top, left top, from(#38d39f), to(#38a4d3));
-  background: linear-gradient(to left, #38d39f, #38a4d3);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .blogs .blog-container {
@@ -979,14 +972,14 @@ body {
   html {
     font-size: 40%;
   }
-  .splash {
-    height: 80%;
-  }
   svg {
     width: 80%;
   }
   nav {
     width: 100%;
+  }
+  .splash {
+    height: clamp(60vh, 1.5vw, 80rem);
   }
 }
 

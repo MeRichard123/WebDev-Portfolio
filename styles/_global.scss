@@ -18,6 +18,21 @@ html {
 h1 {
   font-size: $header1;
 }
+.page-title {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  font-size: 8rem;
+  padding-top: 2rem;
+  color: #1c748f;
+  @supports (background-clip: text) {
+    background: $gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 
 li,
 button,

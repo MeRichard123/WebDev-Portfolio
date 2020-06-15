@@ -1,17 +1,5 @@
 .blogs {
   text-align: center;
-  h1 {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    margin-bottom: 3rem;
-    font-size: 8rem;
-    padding-top: 2rem;
-    background: $gradient;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
   .blog-container {
     display: flex;
     flex-wrap: wrap;
