@@ -84,6 +84,10 @@ nav {
   flex-direction: column;
   flex-wrap: wrap;
   margin: auto;
+  text-align: center;
+  p {
+    margin: 30px 0;
+  }
 
   h1 {
     display: flex;
@@ -195,6 +199,7 @@ nav {
     }
   }
 }
+@import "blog";
 
 #cursor {
   transform-origin: center;
@@ -252,6 +257,11 @@ nav {
   }
 }
 @media screen and (max-width: 754px) {
+  .intro {
+    p {
+      width: 100%;
+    }
+  }
   .icons {
     width: 90%;
     img {
