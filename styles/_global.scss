@@ -96,3 +96,7 @@ a {
     height: 30px;
   }
 }
+
+*:focus {
+  outline: 3px solid #38c7ac;
+}

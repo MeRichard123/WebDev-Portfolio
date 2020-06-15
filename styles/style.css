@@ -137,6 +137,10 @@ a {
   }
 }
 
+*:focus {
+  outline: 3px solid #38c7ac;
+}
+
 .main-head {
   width: 95%;
   margin: 0 0 0 auto;
