@@ -111,21 +111,10 @@ nav {
   padding: 3rem 3rem;
   img {
     border-radius: 50%;
-  }
-  .profile {
-    background: #515151;
     width: 287px;
     height: 287px;
-    color: white;
-    border-radius: 50%;
-    transform: translateY(-50px);
-    p {
-      font-size: 5rem;
-      position: relative;
-      left: 55%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
+    object-fit: contain;
+    margin-bottom: 50px;
   }
   p {
     width: 50%;

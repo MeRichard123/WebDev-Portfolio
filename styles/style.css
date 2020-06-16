@@ -381,25 +381,11 @@ nav ul {
 
 .about img {
   border-radius: 50%;
-}
-
-.about .profile {
-  background: #515151;
   width: 287px;
   height: 287px;
-  color: white;
-  border-radius: 50%;
-  -webkit-transform: translateY(-50px);
-          transform: translateY(-50px);
-}
-
-.about .profile p {
-  font-size: 5rem;
-  position: relative;
-  left: 55%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 50px;
 }
 
 .about p {
